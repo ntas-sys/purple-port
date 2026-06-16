@@ -1,0 +1,19 @@
+{
+  "name": "PlayTorrioV2 Ports",
+  "version": "1.0",
+  "scrapers": [
+    {
+      "id": "nuvio-kinoger",
+      "name": "KinoGer",
+      "description": "Alman film/dizi sitesi kinoger.com — TMDB Almanca başlıkla arar (Cloudflare arkasında)",
+      "version": "1.0",
+      "author": "PlayTorrioV2 port",
+      "supportedTypes": ["movie", "tv"],
+      "filename": "providers/kinoger.js",
+      "enabled": true,
+      "formats": ["mp4", "mkv"],
+      "logo": "",
+      "contentLanguage": ["de"]
+    }
+  ]
+}
