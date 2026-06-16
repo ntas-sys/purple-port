@@ -1,8 +1,0 @@
-{
-  "name": "nuvio-kinoger-test",
-  "version": "1.0.0",
-  "private": true,
-  "dependencies": {
-    "cheerio-without-node-native": "1.0.0-rc.2"
-  }
-}
