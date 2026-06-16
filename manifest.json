@@ -1,11 +1,11 @@
 {
   "name": "PlayTorrioV2 Ports",
-  "version": "1.0",
+  "version": "1.1",
   "scrapers": [
     {
       "id": "nuvio-kinoger",
       "name": "KinoGer",
-      "description": "Alman film/dizi sitesi kinoger.com — TMDB Almanca başlıkla arar (Cloudflare arkasında)",
+      "description": "Alman film/dizi — TMDB Almanca başlıkla arar (Cloudflare arkasında)",
       "version": "1.0",
       "author": "PlayTorrioV2 port",
       "supportedTypes": ["movie", "tv"],
@@ -14,6 +14,123 @@
       "formats": ["mp4", "mkv"],
       "logo": "",
       "contentLanguage": ["de"]
+    },
+    {
+      "id": "nuvio-vixsrc",
+      "name": "VixSrc",
+      "description": "İtalyan embed — TMDB ID doğrudan URL'ye gömülür, scrape yok",
+      "version": "1.0",
+      "author": "PlayTorrioV2 port",
+      "supportedTypes": ["movie", "tv"],
+      "filename": "providers/vixsrc.js",
+      "enabled": true,
+      "formats": ["mp4", "mkv"],
+      "logo": "",
+      "contentLanguage": ["it", "multi"]
+    },
+    {
+      "id": "nuvio-vidsrc",
+      "name": "VidSrc",
+      "description": "Çok dilli embed — TMDB ID URL'ye gömülür",
+      "version": "1.0",
+      "author": "PlayTorrioV2 port",
+      "supportedTypes": ["movie", "tv"],
+      "filename": "providers/vidsrc.js",
+      "enabled": true,
+      "formats": ["mp4", "mkv"],
+      "logo": "",
+      "contentLanguage": ["multi"]
+    },
+    {
+      "id": "nuvio-rgshows",
+      "name": "RgShows",
+      "description": "Rus embed — api.rgshows.ru (Cloudflare'siz, nginx)",
+      "version": "1.0",
+      "author": "PlayTorrioV2 port",
+      "supportedTypes": ["movie", "tv"],
+      "filename": "providers/rgshows.js",
+      "enabled": true,
+      "formats": ["mp4", "mkv"],
+      "logo": "",
+      "contentLanguage": ["multi"]
+    },
+    {
+      "id": "nuvio-einschalten",
+      "name": "Einschalten",
+      "description": "Alman film — JSON API (einschalten.in/api/movies/{tmdbId}/watch)",
+      "version": "1.0",
+      "author": "PlayTorrioV2 port",
+      "supportedTypes": ["movie"],
+      "filename": "providers/einschalten.js",
+      "enabled": true,
+      "formats": ["mp4", "mkv"],
+      "logo": "",
+      "contentLanguage": ["de"]
+    },
+    {
+      "id": "nuvio-verhdlink",
+      "name": "VerHdLink",
+      "description": "İspanyol/Latin film — IMDb ID ile sayfa, _player-mirrors'dan data-link",
+      "version": "1.0",
+      "author": "PlayTorrioV2 port",
+      "supportedTypes": ["movie"],
+      "filename": "providers/verhdlink.js",
+      "enabled": true,
+      "formats": ["mp4", "mkv"],
+      "logo": "",
+      "contentLanguage": ["es", "mx"]
+    },
+    {
+      "id": "nuvio-mostraguarda",
+      "name": "MostraGuarda",
+      "description": "İtalyan film — IMDb ID ile sayfa, [data-link] çıkart",
+      "version": "1.0",
+      "author": "PlayTorrioV2 port",
+      "supportedTypes": ["movie"],
+      "filename": "providers/mostraguarda.js",
+      "enabled": true,
+      "formats": ["mp4", "mkv"],
+      "logo": "",
+      "contentLanguage": ["it"]
+    },
+    {
+      "id": "nuvio-frenchcloud",
+      "name": "FrenchCloud",
+      "description": "Fransız film — IMDb ID ile sayfa, [data-link] çıkart",
+      "version": "1.0",
+      "author": "PlayTorrioV2 port",
+      "supportedTypes": ["movie"],
+      "filename": "providers/frenchcloud.js",
+      "enabled": true,
+      "formats": ["mp4", "mkv"],
+      "logo": "",
+      "contentLanguage": ["fr"]
+    },
+    {
+      "id": "nuvio-meinecloud",
+      "name": "MeineCloud",
+      "description": "Alman film — IMDb ID ile sayfa, [data-link] çıkart (Cloudflare'li)",
+      "version": "1.0",
+      "author": "PlayTorrioV2 port",
+      "supportedTypes": ["movie"],
+      "filename": "providers/meinecloud.js",
+      "enabled": true,
+      "formats": ["mp4", "mkv"],
+      "logo": "",
+      "contentLanguage": ["de"]
+    },
+    {
+      "id": "nuvio-cinehdplus",
+      "name": "CineHDPlus",
+      "description": "İspanyol/Latin dizi — sezon/bölüm mirror'ları (Cloudflare'li)",
+      "version": "1.0",
+      "author": "PlayTorrioV2 port",
+      "supportedTypes": ["tv"],
+      "filename": "providers/cinehdplus.js",
+      "enabled": true,
+      "formats": ["mp4", "mkv"],
+      "logo": "",
+      "contentLanguage": ["es", "mx"]
     }
   ]
 }
